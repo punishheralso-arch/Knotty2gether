@@ -1,0 +1,119 @@
+# Knotty2gether .gitignore
+# Sensitive and proprietary content protection
+
+# Environment & Configuration Files
+.env
+.env.local
+.env.*.local
+config/secrets.json
+config/private-keys.json
+
+# Database & Client Records
+*.db
+*.sqlite
+*.sqlite3
+client-database/
+participant-records/
+bookings.db
+payments.db
+
+# Video & Recording Files
+*.mp4
+*.mov
+*.avi
+*.mkv
+recordings/
+session-videos/
+confirmation-videos/
+*.m4v
+
+# Payment & Financial Records
+payments/
+invoices/
+receipts/
+financial-reports/
+billing-data/
+payment-logs/
+
+# Personal & Confidential Information
+personal-data/
+participant-info/
+client-list.txt
+client-emails.csv
+participant-backgrounds/
+verification-records/
+screening-data/
+
+# API Keys & Credentials
+api-keys.txt
+tokens/
+credentials/
+secret-keys/
+auth-tokens/
+
+# Logs (may contain sensitive data)
+logs/
+*.log
+debug.log
+
+# Node.js (if using for backend)
+node_modules/
+npm-debug.log
+package-lock.json (optional - can commit for consistency)
+
+# Python (if using for backend)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS-Specific Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+
+# Backup & Temporary Files
+*.bak
+*.backup
+*.tmp
+*.temp
+*~
+.~*
+
+# Distribution & Build
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+
+# Sensitive Documentation (local copies only)
+CREDENTIALS.md
+INTERNAL-NOTES.md
+TODO-INTERNAL.md
+
+# Video Confirmation Protocol (local working files)
+confirmation-checklist-internal.md
+session-notes/
+
+# Miscellaneous
+.cache/
+temp/
+temporary/
+working-files/
+
+# IMPORTANT: Do NOT commit participant videos, recordings, or confidential materials
+# All sensitive files should be stored securely outside this repository
+# This repository should contain ONLY documentation, structure, and framework code
